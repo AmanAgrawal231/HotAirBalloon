@@ -7,7 +7,7 @@ function preload() {
 function setup(){
    database = firebase.database();
    console.log(database);
-    createCanvas(500,500);
+    createCanvas(1000,500);
 
 balloon = createSprite (100,400, 20, 20)
   balloon.addAnimation("balloon", balloonImage);
@@ -32,6 +32,7 @@ function draw(){
         else if(keyDown(DOWN_ARROW)){
              balloon.y = balloon.y + 10;
         }
+  text("**USE ARROW KEYS TO MOVE THE HOT AIR BALLON!);
         drawSprites();
     }
 
